@@ -1,0 +1,86 @@
+    /* ####################################################
+    :: Template Name: Essence - Fashion Ecommerce Template
+    :: Author: Colorlib
+    :: Author URL: https://colorlib.com
+    :: Description: Essence is smart & elegant fashion e-commerce Template. It's suitable for all e-commerce business platform.
+    :: Version: 1.0.0
+    :: Created: April 27, 2018
+    :: Last Updated: May 2, 2018
+    #################################################### */
+
+    /* ---------------------------------------
+    ##### - PLACE YOUR CUSTOM CSS HERE - #####
+    --------------------------------------- */
+    .globalcard{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: none;
+        background-color: #ffffff;
+
+    }
+
+    .product:hover{
+        box-shadow: 0px 0px 5px 1px #00000030;
+        cursor: pointer;
+        transform: translateY(-2px);
+        transition-duration: 0.3s;
+    }
+
+    .globalcard .card-header{
+        background-color: #fff;
+
+    }
+
+    .imgwrapper {
+        position: relative;
+        border-radius: 0.2rem 0.2rem 0 0;
+        overflow: hidden;
+        height: 200px;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .imgwrapper img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        display: inline-block;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .product .card-text{
+        font-size: small;
+    }
+
+    .product .productname{
+        color: black;
+        font-weight: bolder;
+        line-height: 1.2;
+    }
+
+    .product .card-body{
+        padding: 0.5rem;
+    }
+
+
+    .cto{
+        margin-top: 3em;
+        width: 100%;
+    }
+
+
+
+    .cto img{
+        object-fit: cover;
+
+    /*height: 300px;*/
+    }
+
+    .favourite-area .lo a{
+        font-size: 16px;
+    }
+
+    .favourite-area a:hover{
+        font-size: 16.4px;
+    }
