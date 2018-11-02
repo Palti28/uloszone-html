@@ -227,3 +227,13 @@
     height: 50px;
     cursor: pointer;
 }
+
+
+/*------------Keranjang---------------*/
+.keranjang{
+    margin-top: 100px;
+}
+
+.keranjang img{
+    max-height: 100px;
+}
