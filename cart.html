@@ -212,10 +212,18 @@
   <div class="col-md-12 keranjang">
     <div class="card globalcard ">
       <div class="card-header">
-        <h5 style="float: left">Keranjang Belanja</h5>
+        <div class="row">
+          <div class="col-5">
+            <a href="index.html" role="button" class="btn btn-sm btn-outline-primary">Belanja lagi</a>
+          </div>
+          <div class="col-7">
+            <h5>Keranjang Belanja</h5>
+          </div>
+
+        </div>
       </div>
       <div class=" card-body ">
-        <div class="row d-none d-md-block" style="margin-bottom: 2em">
+        <div style="margin-bottom: 2em">
           <div class="row font-bold">
             <div class="col-md-6">
               Produk
@@ -228,20 +236,20 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
           <div class="col-md-6 col-sm-12 col-xs-6">
             <div class="row">
               <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="imgwrapper" style="padding: 0px">
-                  <img src="img/product-img/product-33.jpg" alt="Card image cap">
+                  <img src="img/product-img/product-2.jpg" alt="Card image cap">
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12"><div class="keranjang-desc-prod">
-                Ulos ini asdalh adnsa dq;wdkalskdjalskdalksdjalksdjlkasjdlkasjdlk
-              </div></div>
-
-
-
+              <div class="col-lg-8 col-sm-6 col-xs-12">
+                <div class="keranjang-desc-prod">
+                  <h6>Ulos Ragihotang</h6>
+                  Ulos ini asdalh adnsa dq;wdkalskdjalskdalksdjalksdjlkasjdlkasjdlk
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-6">
@@ -260,7 +268,47 @@
                 <div class="btn input-group-text" id="btn-min">-</div>
               </div>
             </div>
-            <button type="button" class="btn btn-outline-warning btn-sm mt-2 ">
+            <button type="button" class="btn btn-outline-warning btn-xs mt-2 ">
+                <span>
+                  <i class="fa fa-trash"></i>
+                </span>
+              Hapus
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6 col-sm-12 col-xs-6">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="imgwrapper" style="padding: 0px">
+                  <img src="img/product-img/product-2.jpg" alt="Card image cap">
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-6 col-xs-12">
+                <div class="keranjang-desc-prod">
+                  <h6>Ulos Ragihotang</h6>
+                  Ulos ini asdalh adnsa dq;wdkalskdjalskdalksdjalksdjlkasjdlkasjdlk
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="keranjang-price-prod h5" style="color: #ff8415">
+              Rp 2.400.000
+            </div>
+          </div>
+          <div class="quantity col-md-2 col-sm-12 col-xs-12">
+            <div class="input-group input-group-sm">
+              <div class="input-group-prepend">
+                <div class="btn input-group-text" id="btn-add">+</div>
+              </div>
+              <input type="text" class="form-control" placeholder="1" aria-label="Input group example"
+                     aria-describedby="btnGroupAddon">
+              <div class="input-group-prepend">
+                <div class="btn input-group-text" id="btn-min">-</div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-warning btn-xs mt-2 ">
                 <span>
                   <i class="fa fa-trash"></i>
                 </span>
@@ -270,9 +318,8 @@
         </div>
 
 
-
       </div>
-      <div class="card-footer  ">
+      <div class="totalpay card-footer ">
         <div class="row justify-content-end">
           <div class="col-md-3 text-right">
             <h6> Total Bayar</h6>
@@ -280,7 +327,7 @@
           </div>
         </div>
       </div>
-      <div class="card-footer ">
+      <div class="paynow card-footer ">
         <button type="button" class="btn btn-primary float-right">Lanjut Pembayaran</button>
       </div>
     </div>
