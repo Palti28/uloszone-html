@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d87f1384-744e-42fd-90f4-f13430b86a55" name="Default" comment="- add marchant page">
-      <change beforePath="" afterPath="$PROJECT_DIR$/payment.html" />
+    <list default="true" id="d87f1384-744e-42fd-90f4-f13430b86a55" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cart.html" afterPath="$PROJECT_DIR$/cart.html" />
-      <change beforePath="$PROJECT_DIR$/checkout.html" afterPath="$PROJECT_DIR$/checkout.html" />
-      <change beforePath="$PROJECT_DIR$/css/core-style.css" afterPath="$PROJECT_DIR$/css/core-style.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/merchantDashboard.html" afterPath="$PROJECT_DIR$/merchantDashboard.html" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/scss/style.scss" />
-      <change beforePath="$PROJECT_DIR$/single-product-details.html" afterPath="$PROJECT_DIR$/single-product-details.html" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -414,7 +405,7 @@
       <workItem from="1542028972588" duration="4179000" />
       <workItem from="1542037011916" duration="5525000" />
       <workItem from="1542078025766" duration="16871000" />
-      <workItem from="1542159110022" duration="816000" />
+      <workItem from="1542159110022" duration="1099000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1541070838367</created>
@@ -493,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541514755364</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- payment&#10;-cart&#10;-shipment&#10;-checkout">
+      <created>1542160965365</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1542160965365</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140423000" />
+    <option name="totallyTimeSpent" value="140706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -536,7 +534,8 @@
     <MESSAGE value="responsive-cart" />
     <MESSAGE value="- fix cart&#10;- add register user&#10;- add login user Modal&#10;- add Merchant Dashboard" />
     <MESSAGE value="- add marchant page" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add marchant page" />
+    <MESSAGE value="- payment&#10;-cart&#10;-shipment&#10;-checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="- payment&#10;-cart&#10;-shipment&#10;-checkout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
