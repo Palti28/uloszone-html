@@ -11,6 +11,38 @@
 /* ---------------------------------------
 ##### - PLACE YOUR CUSTOM CSS HERE - #####
 --------------------------------------- */
+/*==============HEADER================*/
+.header_area .header-meta{
+    height: 70px;
+}
+
+.header_area .classy-navbar{
+    height: 70px;
+}
+
+.header_area .search-area form{
+    height: 70px;
+}
+
+.header_area .search-area form input{
+    height: 70px;
+    width: 300px;
+}
+
+/*================FOOTER==============*/
+.footer_area{
+    border-top: 10px #563232 solid;
+    background-color: #e5e5e5;
+}
+
+.footer_area a{
+    color: #787878;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+
 /* ========= form ========= */
 .formbadge {
     background-color: transparent;

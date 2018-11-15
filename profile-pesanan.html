@@ -274,74 +274,119 @@
     <!--content-->
     <div class="col-md-9 crudproduk" style="display: grid">
       <div class="pull-right">
-        <!--List Produk-->
-        <div class="card globalcard ">
+
+        <!--Pemesanan-->
+        <div class="card globalcard">
           <div class="card-header">
-            <h6>Profil</h6>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-3 col-form-label">Nama Lengkap
-                  <span class="formbadge text-muted badge badge-secondary font-weight-light">Wajib</span>
-                </label>
-                <div class="col-sm-9">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder=""
-                         aria-describedby="passwordHelpBlock">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-3 col-form-label">Tanggal Lahir
-                  <span class="formbadge text-muted badge badge-secondary font-weight-light">Wajib</span>
-                </label>
-                <div class="col-sm-5">
-                  <input type="date" class="form-control" id="" placeholder=""
-                         aria-describedby="passwordHelpBlock">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-3 col-form-label">Jenis Kelamin
-                  <span class="formbadge text-muted badge badge-secondary font-weight-light">Wajib</span>
-                </label>
-                <div class="col-sm-7">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios"
-                           id="gridRadios1" value="option1" checked>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pesananbaru-tab" data-toggle="tab" href="#pesananbaru"
+                   role="tab"
+                   aria-controls="home" aria-selected="true">Pesanan Baru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Konfirmasi-tab" data-toggle="tab" href="#konfirmasi" role="tab"
+                   aria-controls="profile" aria-selected="false">Pesanan Selesai</a>
+              </li>
+              <!--<li class="nav-item">-->
+                <!--<a class="nav-link" id="Status-tab" data-toggle="tab" href="#status" role="tab"-->
+                   <!--aria-controls="contact"-->
+                   <!--aria-selected="false">Status Pengiriman</a>-->
+              <!--</li>-->
+              <!--<li class="nav-item">-->
+                <!--<a class="nav-link" id="transaksi-tab" data-toggle="tab" href="#transaksi" role="tab"-->
+                   <!--aria-controls="contact" aria-selected="false">Daftar Transaksi</a>-->
+              <!--</li>-->
+            </ul>
 
-                    <label class="form-check-label" for="gridRadios1">
-                      Pria
-                    </label>
+            <div class="tab-content" id="myTabContent">
+
+              <div class="tab-pane fade show active" id="pesananbaru" role="tabpanel"
+                   aria-labelledby="pesananbaru-tab">
+                <div class="row mt-3" style="border-bottom: 1px #c5c5c5 solid; padding-bottom: 10px">
+                  <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-12">
+                        <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                          <img src="img/product-img/product-2.jpg" alt="Card image cap">
+                          <style>
+                            .pesanan img{
+                              max-height: 100%;
+                              height: 130px;
+                              object-fit: scale-down;
+                              padding: 3px;
+                              border: 1px #d4d4d4 solid;
+                              border-radius: 0.25em;
+                            }
+                          </style>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-12">
+                        <div class="keranjang-desc-prod">
+                          <h6>Ulos Ragihotang</h6>
+                         <h5 style="color: #FF5205">Rp 12321</h5>
+                          <small>Jumlah 1</small>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="alert alert-warning " role="alert" style="font-size: small">
+                          Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti pembayaran</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios"
-                           id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Wanita
-                    </label>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="konfirmasi" role="tabpanel" aria-labelledby="Konfirmasi-tab">
+                <div class="tab-pane fade show active" id="pesanansukses" role="tabpanel"
+                     aria-labelledby="pesananbaru-tab">
+                  <div class="row mt-3" style="border-bottom: 1px #c5c5c5 solid; padding-bottom: 10px">
+                    <div class="col-md-12 col-sm-12 col-xs-6">
+                      <div class="row">
+                        <div class="col-sm-3 col-xs-12">
+                          <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                            <img src="img/product-img/product-2.jpg" alt="Card image cap">
+                            <style>
+                              .pesanan img{
+                                max-height: 100%;
+                                /*height: 130px;*/
+                                object-fit: scale-down;
+                                padding: 3px;
+                                border: 1px #d4d4d4 solid;
+                                border-radius: 0.25em;
+                              }
+                            </style>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="keranjang-desc-prod">
+                            <h6>Ulos Ragihotang</h6>
+                            <h5 style="color: #FF5205">Rp 12321</h5>
+                            <small>Jumlah 1</small>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="alert alert-success " role="alert" style="font-size: small">
+                            Terkirim<br><a href="payment.html" class="alert-link">Lihat ulasan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
               </div>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-3 col-form-label">Alamat Rumah
-                  <span class="formbadge text-muted badge badge-secondary font-weight-light">Wajib</span>
-                </label>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" id="" placeholder=""
-                         aria-describedby="passwordHelpBlock">
-                </div>
+              <div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="Status-tab">...
               </div>
-              <div class="form-group row">
-                <div class="col-sm-12">
-                  <button type="submit" class="btn btn-primary float-right" style="font-size:small"> Simpan</button>
-                </div>
+              <div class="tab-pane fade" id="transaksi" role="tabpanel" aria-labelledby="Konfirmasi-tab">
+                <h5> transaksi</h5>
               </div>
-            </form>
+            </div>
 
           </div>
-
         </div>
-        <!--//List Produk-->
-
+        <!--//Pemesanan-->
 
 
         <!--//content-->
