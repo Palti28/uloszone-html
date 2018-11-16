@@ -183,10 +183,19 @@
 
             </div>
             <div class="col-md-6">
-              <span>Ulos</span>
-              <a href="cart.html">
+              <button type="button" class="badge badge-danger font-weight-light"
+                      data-toggle="test"
+                      data-rigger="focus"
+                      data-content="<b><a href='single-blog.html'>Klik disini</a></b>  untuk informasi selebihnya "
+                      data-html="true"
+                      title="Dibuat dengan ATBM"
+
+                      style="border: none; cursor: pointer">
+                Mesin
+              </button>
+
                 <h2>Ulos Mangiring Bagus</h2>
-              </a>
+
               <p class="product-price"><span class="detail-price h6" style="color: #ff8415;">Rp 650.000</span></p>
               <p class="product-desc">Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante.
                 Aenean
@@ -234,8 +243,8 @@
                 <!-- Cart & Favourite Box -->
                 <div class="cart-fav-box d-flex align-items-center">
                   <!-- Cart -->
-                  <button type="submit" name="addtocart" value="5" class="btn essence-btn">Add to cart
-                  </button>
+                  <a href="cart.html" class="btn essence-btn">Add to cart</a>
+
                   <!-- Favourite -->
                   <div class="product-favourite ml-4">
                     <a href="#" class="favme fa fa-heart"></a>
@@ -260,24 +269,68 @@
 
                 </ul>
                 <div class="tab-content mt-3" id="myTabContent">
+                  <!--for deskripsi-->
                   <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
-                    Tempat Deskripsi dari produk
+                    <ul>
+                      <li>asdkas;d</li>
+                      <li>asdkas;d</li>
+                      <li>asdkas;d</li>
+                    </ul>
+                    Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante.
+                    Aenean finibus velit id urna vehicula, nec maximus est sollicitudin.
                   </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    Disini tempat Ulasan dari pelanggan
-                  </div>
+                  <!--for deskripsi-->
+                  <!--for review-->
+                  <div class="tab-pane fade ulasan" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <!--card review-->
+                    <div class="card mt-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <div class="imgwrapper">
+                              <img src="img/product-img/product-4.jpg" alt="" style="">
+                            </div>
 
+                          </div>
+
+                          <div class="col-md-9">
+                            <small>Rabu, 17 October 2018</small>
+                            <br>
+                            ininya sih bagus tagpi cemanalah yakana bukan karna apat
+                            bukanya apa kali
+                            hahaha
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card mt-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <div class="imgwrapper">
+                              <img src="img/product-img/product-4.jpg" alt="" style="">
+                            </div>
+
+                          </div>
+
+                          <div class="col-md-9">
+                            <small>Rabu, 17 October 2018</small>
+                            <br>
+                            ininya sih bagus tagpi cemanalah yakana bukan karna apat
+                            bukanya apa kali
+                            hahaha
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/////card review-->
+                  </div>
+                  <!--///////for review-->
                 </div>
-
-                <!-- Tab panes -->
-
-
               </div>
             </div>
-
           </div>
-
-
           <!--<section class="single_product_details_area d-flex align-items-center">-->
 
           <!--&lt;!&ndash; Single Product Thumb &ndash;&gt;-->
@@ -609,15 +662,15 @@
         <div class="single_widget_area">
           <div class="footer_social_area">
             <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i
-                    class="fa fa-instagram" aria-hidden="true"></i></a>
+                class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"
                                                                                       aria-hidden="true"></i></a>
             <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
-                    class="fa fa-pinterest" aria-hidden="true"></i></a>
+                class="fa fa-pinterest" aria-hidden="true"></i></a>
             <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i
-                    class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                class="fa fa-youtube-play" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -640,9 +693,30 @@
 <!-- ##### Footer Area End ##### -->
 
 
+
+
+
+<!-- jQuery (Necessary for All JavaScript Plugins) -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="js/plugins.js"></script>
+<!-- Classy Nav js -->
+<script src="js/classy-nav.min.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+
+
 <script>
     $(document).ready(function () {
+        $('[data-toggle="test"]').popover({
+            trigger:'focus'
+        });
 
+        console.log( "ready!" );
         var clickEvent = false;
         $('#myCarousels').on('click', '.nav a', function () {
             clickEvent = true;
@@ -661,24 +735,7 @@
             clickEvent = false;
         });
     });
-
-
 </script>
-
-
-<!-- jQuery (Necessary for All JavaScript Plugins) -->
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="js/popper.min.js"></script>
-<!-- Bootstrap js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Plugins js -->
-<script src="js/plugins.js"></script>
-<!-- Classy Nav js -->
-<script src="js/classy-nav.min.js"></script>
-<!-- Active js -->
-<script src="js/active.js"></script>
-
 </body>
 
 </html>
