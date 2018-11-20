@@ -12,36 +12,35 @@
 ##### - PLACE YOUR CUSTOM CSS HERE - #####
 --------------------------------------- */
 /*==============HEADER================*/
-.header_area .header-meta{
+.header_area .header-meta {
     height: 70px;
 }
 
-.header_area .classy-navbar{
+.header_area .classy-navbar {
     height: 70px;
 }
 
-.header_area .search-area form{
+.header_area .search-area form {
     height: 70px;
 }
 
-.header_area .search-area form input{
+.header_area .search-area form input {
     height: 70px;
     width: 300px;
 }
 
 /*================FOOTER==============*/
-.footer_area{
+.footer_area {
     border-top: 10px #563232 solid;
     background-color: #e5e5e5;
 }
 
-.footer_area a{
+.footer_area a {
     color: #787878;
     font-size: 14px;
     line-height: 2;
     font-weight: 400;
 }
-
 
 /* ========= form ========= */
 .formbadge {
@@ -212,10 +211,6 @@
 
 }
 
-
-
-
-
 /*-------------PRODUCTS---------------*/
 .products .card-text {
     font-size: small;
@@ -336,25 +331,25 @@
     font-size: inherit;
 }
 
-.detailreview .ulasan .imgwrapper{
+.detailreview .ulasan .imgwrapper {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border: 1px solid #c6c6c6;
 }
 
-.detailreview .ulasan img{
+.detailreview .ulasan img {
     height: 50px;
     width: 50px;
     object-fit: cover;
 
 }
 
-.vimagewrapper{
+.vimagewrapper {
     height: auto;
 }
 
-.vimg{
+.vimg {
     max-height: 100%;
     /*height: 130px;*/
     object-fit: scale-down;
@@ -362,9 +357,6 @@
     border: 1px #d4d4d4 solid;
     border-radius: 0.25em;
 }
-
-
-
 
 /*------------Keranjang---------------*/
 .keranjang {
@@ -457,23 +449,22 @@
     margin-left: 15px;
     margin-bottom: 15px;
 }
+
 /*============PAYMENT===========*/
-.payment{
+.payment {
     margin-top: 100px;
 }
 
-.payment .time{
+.payment .time {
     background-color: #f7f8f7;
     border: 1px solid #d4d4d4;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #cde4c3;
     border-radius: 5px;
-    border-bottom: 1px solid #cde4c3!important;
+    border-bottom: 1px solid #cde4c3 !important;
     padding: 10px;
 }
-
-
 
 /*============ HORIZONTAL CARD ==============*/
 .hcard .card-body {
@@ -506,4 +497,64 @@
 @media (max-width: 1199.98px) {
 }
 
+/*=========merchantDashboard============*/
+.widget .card {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    padding: 1em;
+    box-shadow: 2px 2px 10px #DADADA;
+}
 
+.stat-widget-five {
+    min-height: 60px;
+}
+
+.stat-widget-five .stat-icon {
+    font-size: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 30px;
+
+}
+
+.stat-widget-five .stat-content {
+    margin-left: 100px;
+}
+
+.stat-widget-five .stat-text {
+    color: #455a64;
+    font-size: 20px;
+}
+
+.stat-widget-five .stat-heading {
+    color: #99abb4;
+    font-size: 14px;
+}
+
+/*===============Costumer Pesanan==============*/
+.detailorder .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.detailorder .detail {
+    font-weight: 500;
+}
+
+.pesanan img {
+    max-height: 100%;
+    height: 130px;
+    object-fit: scale-down;
+    padding: 3px;
+    border: 1px #d4d4d4 solid;
+    border-radius: 0.25em;
+}
+
+/*============button============*/
+.smallbtn {
+    background-color: orange;
+    border-radius: 3px;
+    padding: 5px 15px;
+    color: white;
+}

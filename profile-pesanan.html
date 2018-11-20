@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="style.css">
   <link href="css/full-slider.css" rel="stylesheet">
   <link href="css/cardslide.css" rel="stylesheet">
+  <style>
 
+  </style>
 
 </head>
 
@@ -256,14 +258,13 @@
                   <li><a href="#">Order Dibatalkan</a></li>
                   <li><a href="#">Order Gagal</a></li>
                 </ul>
-                <li data-toggle="collapse" data-target="#ulasan" class="collapsed" style="border-top:1px #b6b6b6 solid ">
+                <li data-toggle="collapse" data-target="#ulasan" class="collapsed"
+                    style="border-top:1px #b6b6b6 solid ">
                   <a href="#">Keluar</a>
                 </li>
                 <!-- Single Item -->
-
               </ul>
             </div>
-
           </div>
         </div>
         <!--leftnav-->
@@ -272,103 +273,327 @@
     <!--//sidebar-->
 
     <!--content-->
-    <div class="col-md-9 crudproduk" style="display: grid">
-      <div class="pull-right">
+    <div class="col-md-9 crudproduk">
+      <div class="card globalcard breadcrumbcard card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Pesanan</h5>
+          </div>
+        </div>
+      </div>
 
+      <div class="pull-right">
         <!--Pemesanan-->
         <div class="card globalcard">
           <div class="card-header">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="pesananbaru-tab" data-toggle="tab" href="#pesananbaru"
+                <a class="nav-link active" id="pesananbaru-tab" data-toggle="tab" href="#pesanansaatini"
                    role="tab"
-                   aria-controls="home" aria-selected="true">Pesanan Baru</a>
+                   aria-controls="home" aria-selected="true">Pesanan Saat Ini</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="Konfirmasi-tab" data-toggle="tab" href="#konfirmasi" role="tab"
                    aria-controls="profile" aria-selected="false">Pesanan Selesai</a>
               </li>
-              <!--<li class="nav-item">-->
-                <!--<a class="nav-link" id="Status-tab" data-toggle="tab" href="#status" role="tab"-->
-                   <!--aria-controls="contact"-->
-                   <!--aria-selected="false">Status Pengiriman</a>-->
-              <!--</li>-->
-              <!--<li class="nav-item">-->
-                <!--<a class="nav-link" id="transaksi-tab" data-toggle="tab" href="#transaksi" role="tab"-->
-                   <!--aria-controls="contact" aria-selected="false">Daftar Transaksi</a>-->
-              <!--</li>-->
             </ul>
-
             <div class="tab-content" id="myTabContent">
-
-              <div class="tab-pane fade show active" id="pesananbaru" role="tabpanel"
+              <div class="tab-pane fade show active" id="pesanansaatini" role="tabpanel"
                    aria-labelledby="pesananbaru-tab">
-                <div class="row mt-3" style="border-bottom: 1px #c5c5c5 solid; padding-bottom: 10px">
-                  <div class="col-md-12 col-sm-12 col-xs-6">
-                    <div class="row">
-                      <div class="col-sm-3 col-xs-12">
-                        <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
-                          <img src="img/product-img/product-2.jpg" alt="Card image cap">
-                          <style>
-                            .pesanan img{
-                              max-height: 100%;
-                              height: 130px;
-                              object-fit: scale-down;
-                              padding: 3px;
-                              border: 1px #d4d4d4 solid;
-                              border-radius: 0.25em;
-                            }
-                          </style>
+
+                <!--single order-->
+                <div class="detailorder mt-2">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-header" style="background-color: #f1f1f1">
+                          <div class="row text-muted">
+                            <div class="col-sm-3 small">
+                              Tanggal Transaksi
+                            </div>
+                            <div class="col-sm-3 small">
+                              Total pembayaran
+                            </div>
+                            <div class="col-sm-3 small">
+                              Status Pembayaran
+                            </div>
+
+                          </div>
+                          <div class="row detail">
+                            <div class="col-sm-3">
+                              28 Desember 2018
+                            </div>
+                            <div class="col-sm-3 bold" style="color: orangered">
+                              Rp 201823
+                            </div>
+                            <div class="col-sm-6 ">
+                              <div class="alert alert-warning p-1" role="alert" style="font-size: x-small">
+                                Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti
+                                pembayaran</a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-sm-6 col-xs-12">
-                        <div class="keranjang-desc-prod">
-                          <h6>Ulos Ragihotang</h6>
-                         <h5 style="color: #FF5205">Rp 12321</h5>
-                          <small>Jumlah 1</small>
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="alert alert-warning " role="alert" style="font-size: small">
-                          Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti pembayaran</a>
+                        <div class="card-body">
+                          <div class="row  singleorderprod" style=" padding-bottom: 10px">
+                            <div class="col-md-12 col-sm-12 col-xs-6">
+                              <div class="row">
+                                <div class="col-sm-2 col-xs-12">
+                                  <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                                    <img src="img/product-img/product-2.jpg" alt="Card image cap">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                  <div class="keranjang-desc-prod">
+                                    <h6>Ulos Ragihotang</h6>
+                                    <h6 style="color: #FF5205; display: inline;">Rp 12321</h6>
+                                    <small>/unit</small>
+                                    <br>
+                                    <small>Jumlah 1</small>
+                                  </div>
+                                </div>
+                                <!--<div class="col-md-3">-->
+                                <!--<div class="alert alert-warning " role="alert" style="font-size: small">-->
+                                <!--Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti-->
+                                <!--pembayaran</a>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!--multiple order-->
+                <div class="detailorder mt-2">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-header" style="background-color: #f1f1f1">
+                          <div class="row text-muted">
+                            <div class="col-sm-3 small">
+                              Tanggal Transaksi
+                            </div>
+                            <div class="col-sm-3 small">
+                              Total pembayaran
+                            </div>
+                            <div class="col-sm-3 small">
+                              Status Pembayaran
+                            </div>
+
+                          </div>
+                          <div class="row detail">
+                            <div class="col-sm-3">
+                              28 Desember 2018
+                            </div>
+                            <div class="col-sm-3 bold" style="color: orangered">
+                              Rp 201823
+                            </div>
+                            <div class="col-sm-6 ">
+                              <div class="alert alert-warning p-1" role="alert" style="font-size: x-small">
+                                Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti
+                                pembayaran</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="row  singleorderprod" style=" padding-bottom: 10px">
+                            <div class="col-md-12 col-sm-12 col-xs-6">
+                              <div class="row">
+                                <div class="col-sm-2 col-xs-12">
+                                  <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                                    <img src="img/product-img/product-3.jpg" alt="Card image cap">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                  <div class="keranjang-desc-prod">
+                                    <h6>Ulos Ragihotang</h6>
+                                    <h6 style="color: #FF5205; display: inline;">Rp 12321</h6>
+                                    <small>/unit</small>
+                                    <br>
+                                    <small>Jumlah 1</small>
+                                  </div>
+                                </div>
+                                <!--<div class="col-md-3">-->
+                                <!--<div class="alert alert-warning " role="alert" style="font-size: small">-->
+                                <!--Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti-->
+                                <!--pembayaran</a>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  singleorderprod" style=" padding-bottom: 10px">
+                            <div class="col-md-12 col-sm-12 col-xs-6">
+                              <div class="row">
+                                <div class="col-sm-2 col-xs-12">
+                                  <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                                    <img src="img/product-img/product-6.jpg" alt="Card image cap">
+
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                  <div class="keranjang-desc-prod">
+                                    <h6>Ulos Ragihotang</h6>
+                                    <h6 style="color: #FF5205; display: inline;">Rp 12321</h6>
+                                    <small>/unit</small>
+                                    <br>
+                                    <small>Jumlah 1</small>
+                                  </div>
+                                </div>
+                                <!--<div class="col-md-3">-->
+                                <!--<div class="alert alert-warning " role="alert" style="font-size: small">-->
+                                <!--Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti-->
+                                <!--pembayaran</a>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--sudah bayar-->
+                <div class="detailorder mt-2">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-header" style="background-color: #f1f1f1">
+                          <div class="row text-muted">
+                            <div class="col-sm-3 small">
+                              Tanggal Transaksi
+                            </div>
+                            <div class="col-sm-3 small">
+                              Total pembayaran
+                            </div>
+                            <div class="col-sm-3 small">
+                              Status Pembayaran
+                            </div>
+
+                          </div>
+                          <div class="row detail">
+                            <div class="col-sm-3">
+                              28 Desember 2018
+                            </div>
+                            <div class="col-sm-3 bold" style="color: orangered">
+                              Rp 201823
+                            </div>
+                            <div class="col-sm-6 ">
+                              Pembayaran Diterima <br>
+                              <small>ATM BNI</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="row  singleorderprod" style=" padding-bottom: 10px">
+                            <div class="col-md-12 col-sm-12 col-xs-6">
+                              <div class="row">
+                                <div class="col-sm-2 col-xs-12">
+                                  <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                                    <img src="img/product-img/product-33.jpg" alt="Card image cap">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="keranjang-desc-prod">
+                                    <h6>Ulos Ragihotansdasdasdasdasdasdasdasdasdad asdg</h6>
+                                    <h6 style="color: #FF5205; display: inline;">Rp 12321</h6>
+                                    <small>/unit</small>
+                                    <br>
+                                    <small>Jumlah 1</small>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <small>Dalam Pengiriman</small>
+                                  <small>Estimasi Barang Diterima</small>
+                                  <br>
+                                  <small><b>09 Jan 2018 - 12 Jan 2018</b></small>
+                                </div>
+                                <div class="col-md-12 ">
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="konfirmasi" role="tabpanel" aria-labelledby="Konfirmasi-tab">
                 <div class="tab-pane fade show active" id="pesanansukses" role="tabpanel"
                      aria-labelledby="pesananbaru-tab">
-                  <div class="row mt-3" style="border-bottom: 1px #c5c5c5 solid; padding-bottom: 10px">
-                    <div class="col-md-12 col-sm-12 col-xs-6">
-                      <div class="row">
-                        <div class="col-sm-3 col-xs-12">
-                          <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
-                            <img src="img/product-img/product-2.jpg" alt="Card image cap">
-                            <style>
-                              .pesanan img{
-                                max-height: 100%;
-                                /*height: 130px;*/
-                                object-fit: scale-down;
-                                padding: 3px;
-                                border: 1px #d4d4d4 solid;
-                                border-radius: 0.25em;
-                              }
-                            </style>
+                  <!--single order-->
+                  <div class="detailorder mt-2">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-header" style="background-color: #f1f1f1">
+                            <div class="row text-muted">
+                              <div class="col-sm-3 small">
+                                Tanggal Transaksi
+                              </div>
+                              <div class="col-sm-3 small">
+                                Total pembayaran
+                              </div>
+                              <div class="col-sm-3 small">
+                                Status Pembayaran
+                              </div>
+
+                            </div>
+                            <div class="row detail">
+                              <div class="col-sm-3">
+                                28 Desember 2018
+                              </div>
+                              <div class="col-sm-3 bold" style="color: orangered">
+                                Rp 201823
+                              </div>
+                              <div class="col-sm-6 ">
+                                Pembayaran Diterima <br>
+                                <small> ATM BNI</small>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                          <div class="keranjang-desc-prod">
-                            <h6>Ulos Ragihotang</h6>
-                            <h5 style="color: #FF5205">Rp 12321</h5>
-                            <small>Jumlah 1</small>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="alert alert-success " role="alert" style="font-size: small">
-                            Terkirim<br><a href="payment.html" class="alert-link">Lihat ulasan</a>
+                          <div class="card-body">
+                            <div class="row  singleorderprod" style=" padding-bottom: 10px">
+                              <div class="col-md-12 col-sm-12 col-xs-6">
+                                <div class="row">
+                                  <div class="col-sm-2 col-xs-12">
+                                    <div class="imgwrapper pesanan" style="padding: 0px; height: auto">
+                                      <img src="img/product-img/product-2.jpg" alt="Card image cap">
+
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-5 col-xs-12">
+                                    <div class="keranjang-desc-prod">
+                                      <h6>Ulos Ragihotang</h6>
+                                      <h6 style="color: #FF5205; display: inline;">Rp 12321</h6>
+                                      <small>/unit</small>
+                                      <br>
+                                      <small>Jumlah 1</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-2">
+                                    <small>Terkirim</small>
+                                  </div>
+                                  <div class="col-md-2">
+                                    <a href="#" class="small smallbtn">detail</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
                           </div>
                         </div>
                       </div>
@@ -377,8 +602,7 @@
 
                 </div>
               </div>
-              <div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="Status-tab">...
-              </div>
+
               <div class="tab-pane fade" id="transaksi" role="tabpanel" aria-labelledby="Konfirmasi-tab">
                 <h5> transaksi</h5>
               </div>
