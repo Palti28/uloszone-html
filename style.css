@@ -11,6 +11,24 @@
 /* ---------------------------------------
 ##### - PLACE YOUR CUSTOM CSS HERE - #####
 --------------------------------------- */
+
+
+/*=================OwlNav===============*/
+.npnav button{
+    width: 30px;
+    background-color: #ffffff;
+    margin: 0px 10px 0px 10px;
+    border-radius: 3px;
+    border: 1px solid #c5c5c5;
+}
+
+.npnav button:hover{
+    cursor: pointer;
+    background-color: #c5c5c5;
+    transition-duration: 0.3s;
+}
+
+
 /*==============HEADER================*/
 .header_area .header-meta {
     height: 70px;
@@ -98,11 +116,17 @@
     height: 30px;
 }
 
+
+.product{
+    margin: 5px;
+}
+
 .product:hover {
     box-shadow: 0px 0px 5px 1px #00000030;
     cursor: pointer;
     transform: translateY(-2px);
     transition-duration: 0.3s;
+    border: 1px solid rgba(0, 0, 0, .125);
 }
 
 .globalcard .card-header {
