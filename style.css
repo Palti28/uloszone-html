@@ -66,6 +66,27 @@ body {
     border: 1px #6c757d solid;
 }
 
+
+/*=============BANNER================*/
+.banner{
+    display: flex;
+}
+
+.banner_item{
+    margin: 2px;
+    min-width: 300px;
+    /*width: 33%;*/
+}
+
+.banner_item img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
 /* ===== button upload image ======*/
 .upload-btn-wrapper {
     position: relative;
