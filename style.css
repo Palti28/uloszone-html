@@ -15,8 +15,13 @@ body {
     font-size: 16px;
 }
 
+.upbanner {
+    margin-top: 10px;
+    display: block;
+}
+
 /*=================OwlNav===============*/
-.npnav button{
+.npnav button, .npnavb button {
     width: 30px;
     background-color: #ffffff;
     margin: 0px 10px 0px 10px;
@@ -24,12 +29,16 @@ body {
     border: 1px solid #c5c5c5;
 }
 
-.npnav button:hover{
+.npnav button:hover {
     cursor: pointer;
     background-color: #c5c5c5;
     transition-duration: 0.3s;
 }
 
+.npnavb .owl-prev {
+    background-color: #2196F3;
+    left: 100px;
+}
 
 /*==============HEADER================*/
 .header_area .header-meta {
@@ -39,8 +48,6 @@ body {
 .header_area .classy-navbar {
     height: auto;
 }
-
-
 
 .header_area .search-area form input {
 
@@ -66,26 +73,24 @@ body {
     border: 1px #6c757d solid;
 }
 
-
 /*=============BANNER================*/
-.banner{
+.banner {
     display: flex;
 }
 
-.banner_item{
+.banner_item {
     margin: 2px;
     min-width: 300px;
     /*width: 33%;*/
 }
 
-.banner_item img{
+.banner_item img {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
     height: auto;
     vertical-align: middle;
 }
-
 
 /* ===== button upload image ======*/
 .upload-btn-wrapper {
@@ -137,9 +142,8 @@ body {
     height: 30px;
 }
 
-
-.product{
-    margin: 5px;
+.product {
+    margin: 2px;
     border: none;
 }
 
@@ -515,7 +519,7 @@ body {
 
     }
 
-    .slide{
+    .slide {
         padding: 1px;
     }
 }

@@ -32,19 +32,14 @@
 <body>
 <!-- ##### Header Area Start ##### -->
 <header class="header_area">
-  <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+  <div class="classy-nav-container d-flex align-items-center justify-content-between light left breakpoint-on">
     <!-- Classy Menu -->
     <nav class="classy-navbar" id="essenceNav">
       <!-- Logo -->
-
-      <div class="col-sm-12 col-md-3">
-        <a class="nav-brand" href="index1.html"><img src="img/core-img/logo.png" alt=""></a>
-
-      </div>
-
+      <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
       <!-- Navbar Toggler -->
       <div class="classy-navbar-toggler">
-        <span class="navbarToggler"></span>
+        <span class="navbarToggler"><span></span><span></span><span></span></span>
       </div>
       <!-- Menu -->
       <div class="classy-menu">
@@ -111,24 +106,21 @@
       <!-- Search Area -->
       <div class="search-area">
         <form action="#" method="post">
-          <input type="search" name="search" id="headerSearch" placeholder="Cari produk">
+          <input type="search" name="search" id="headerSearch" placeholder="Type for search">
           <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
       </div>
       <!-- Favourite Area -->
-
       <div class="favourite-area">
-        <a href="#">Daftar </a>
-
+        <a href="#"><img src="img/core-img/heart.svg" alt=""></a>
       </div>
       <!-- User Login Info -->
       <div class="user-login-info">
-        <a href="#" data-toggle="modal" data-target="#exampleModal">Masuk</a>
+        <a href="#"><img src="img/core-img/user.svg" alt=""></a>
       </div>
-
       <!-- Cart Area -->
       <div class="cart-area">
-        <a href="cart.html" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span>3</span></a>
+        <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span>3</span></a>
       </div>
     </div>
 
@@ -136,24 +128,22 @@
 </header>
 <!-- ##### Header Area End ##### -->
 
+<section class="" style="    margin-top: 100px;" >
 
-<!--carousel-->
-<div class="col-sm-12">
-  <div class="row">
+  <div class="">
     <div id="owl-banner" class="owl-carousel">
       <img class="d-block w-100" src="img/bg-img/banner1.png" alt="First slide">
-      <img class="d-block w-100" src="img/bg-img/banner2.png" alt="First slide">
-      <img class="d-block w-100" src="img/bg-img/banner3.png" alt="First slide">
+      <img class="d-block w-100" src="img/bg-img/banner1.png" alt="First slide">
+      <img class="d-block w-100" src="img/bg-img/banner1.png" alt="First slide">
     </div>
 
-
-
   </div>
+</section>
+<!--carousel-->
 
-</div>
 <!--Carousel end-->
 
-<div class="col-md-12 col-sm-12 mt-2 slide">
+<div class="col-md-12 col-sm-12 slide">
   <div class="card globalcard">
     <div class="card-header">
       <h5 style="float: left">Produk Terbaru</h5>
@@ -763,11 +753,12 @@
             responsiveClass: true,
             responsive: {
                 0: {
-                    margin: 1,
+                    margin: 5,
                     items: 1,
                     autoplay: true,
                     loop: true,
                     navContainer: '#customNav4',
+                    stagePadding: 10
                 },
                 991.88: {
                     items: 3,
@@ -780,21 +771,23 @@
         });
         $("#owl-banner").owlCarousel({
             lazyLoad: true,
+            dots: false,
             responsiveClass: true,
             navContainer: '#customNavb',
             responsive: {
                 0: {
-                    margin: 10,
+                    margin: 5,
                     items: 1,
                     autoplay: true,
                     loop: true,
-                    stagePadding:50,
+                    stagePadding:10,
 
                 },
                 991.88: {
                     items: 1,
                     margin:30,
-                    autoplay: true,
+                    loop:true,
+                    autoplay: true
 
 
                 }
