@@ -317,7 +317,10 @@
                             <div class="col-sm-3 small">
                               Status Pembayaran
                             </div>
-
+                            <div class="col-sm-3 small">
+                              <a href="#" class="small smallbtn float-right" data-toggle="modal"
+                              data-target="#cancelorderModel">Batal Pembelian</a>
+                            </div>
                           </div>
                           <div class="row detail">
                             <div class="col-sm-3">
@@ -326,7 +329,7 @@
                             <div class="col-sm-3 bold" style="color: orangered">
                               Rp 201823
                             </div>
-                            <div class="col-sm-6 ">
+                            <div class="col-sm-3 ">
                               <div class="alert alert-warning p-1" role="alert" style="font-size: x-small">
                                 Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti
                                 pembayaran</a>
@@ -393,7 +396,7 @@
                             <div class="col-sm-3 bold" style="color: orangered">
                               Rp 201823
                             </div>
-                            <div class="col-sm-6 ">
+                            <div class="col-sm-3 ">
                               <div class="alert alert-warning p-1" role="alert" style="font-size: x-small">
                                 Menunggu Pembayaran <br><a href="payment.html" class="alert-link">Upload bukti
                                 pembayaran</a>
@@ -722,6 +725,34 @@
   </div>
 </div>
 <!--// MODAL LOGIN-->
+
+<div class="modal fade" id="cancelorderModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Pembatalan Order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="col-md-12 mt-2">
+          Tuliskan alasan Anda membatalkan order ini: <br>
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" id="textareakomentar" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+        <button type="button" class="btn btn-primary">Batalkan Pesanan</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
